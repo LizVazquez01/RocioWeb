@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <title>RocioWeb · Desarrollo Web</title>
+  <meta name="description"
+    content="Desarrollo de sitios web y sistemas pequeños para emprendedores y empresas. Soluciones digitales modernas, funcionales y responsivas.">
+  <meta name="author" content="RocioWeb">
+
+  <!-- Open Graph (para compartir en redes sociales) -->
+  <meta property="og:title" content="RocioWeb · Desarrollo Web">
+  <meta property="og:description"
+    content="Desarrollo de sitios web y sistemas pequeños para emprendedores y empresas. Soluciones digitales modernas y funcionales.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rocioweb.netlify.app/">
+  <meta property="og:image" content="./logo.ico">
+
+  <!-- Favicon -->
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Elemento para la animación de resplandor que sigue al cursor -->
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress"></div>
+
+  <nav>
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="logo" style="height: 40px; vertical-align: middle; margin-left: 1px;">
+      RocioWeb
+      <img src="logo.png" alt="logo" style="height: 40px; vertical-align: middle; margin-left: 1px;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contactame</a></li>
+    </ul>
+    <div class="nav-badge">
+      <span class="badge-pulse"></span>
+      ¿Listo para estar siempre online?
+    </div>
+    <div class="nav-buttons-mobile">
+      <a href="#servicios" class="nav-btn-mobile nav-btn-primary-mobile">Servicios</a>
+      <a href="#contacto" class="nav-btn-mobile nav-btn-outline-mobile">Contactame</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Webs que hacen<br>crecer tu <span>proyecto<br> </span></h1>
+      <p class="hero-desc">
+        Estudiante de Ingeniería en Informática, con ganas de ayudarte a dar el salto al mundo digital.<br>
+        Hagamos realidad tu idea y llevémosla a internet.<br>
+        Desarrollo páginas web simples, funcionales y con buena presencia,
+        ayudándote a construir tu identidad digital.</p>
+
+      <h2>Online, con <span class="accent">identidad</span> y <span class="accent">presencia</span>.</h2>
+      <div class="hero-cta">
+        <a href="#servicios" class="btn-primary">Ver mis servicios</a>
+        <a href="#contacto" class="btn-outline">Contactarme</a>
+      </div>
+    </div>
+
+    <div class="hero-mockup" aria-hidden="true">
+      <div class="monitor-container">
+        <div class="monitor-frame">
+          <div class="mockup-window">
+            <div class="mockup-bar">
+              <div class="mockup-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="mockup-url">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4l3 3" />
+                </svg>
+                minegocio.com
+              </div>
+              <div class="mockup-bar-actions"><span></span><span></span></div>
+            </div>
+            <div class="mockup-body">
+              <div class="sim-nav">
+                <div class="sim-logo"></div>
+                <div class="sim-nav-links">
+                  <div class="sim-link active"></div>
+                  <div class="sim-link"></div>
+                  <div class="sim-link"></div>
+                </div>
+              </div>
+              <div class="sim-hero">
+                <div class="sim-hero-left">
+                  <div class="sim-tag"><span class="sim-dot"></span>
+                    <div class="sim-tag-text"></div>
+                  </div>
+                  <div class="sim-h1"></div>
+                  <div class="sim-h1 sim-h1--short"></div>
+                  <div class="sim-p"></div>
+                  <div class="sim-p sim-p--short"></div>
+                  <div class="sim-btns">
+                    <div class="sim-btn sim-btn--primary">Ver servicios</div>
+                    <div class="sim-btn sim-btn--outline">Contacto</div>
+                  </div>
+                </div>
+                <div class="sim-hero-right">
+                  <div class="sim-card-dark">
+                    <div class="sim-card-title"></div>
+                    <div class="sim-card-sub"></div>
+                    <div class="sim-tags-row"><span class="sim-badge">HTML5</span><span
+                        class="sim-badge">CSS3</span><span class="sim-badge">JS</span></div>
+                    <div class="sim-tags-row"><span class="sim-badge">Figma</span><span class="sim-badge">Git</span>
+                    </div>
+                    <div class="sim-float-chip"><span class="sim-chip-dot"></span>Disponible</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sim-metrics">
+                <div class="sim-metric">
+                  <div class="sim-metric-num">98</div>
+                  <div class="sim-metric-bar">
+                    <div class="sim-metric-fill" style="width:98%"></div>
+                  </div>
+                  <div class="sim-metric-label">Performance</div>
+                </div>
+                <div class="sim-metric">
+                  <div class="sim-metric-num">92</div>
+                  <div class="sim-metric-bar">
+                    <div class="sim-metric-fill sim-metric-fill--blue" style="width:92%"></div>
+                  </div>
+                  <div class="sim-metric-label">SEO</div>
+                </div>
+                <div class="sim-metric">
+                  <div class="sim-metric-num">100</div>
+                  <div class="sim-metric-bar">
+                    <div class="sim-metric-fill" style="width:100%"></div>
+                  </div>
+                  <div class="sim-metric-label">Responsive</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="monitor-bottom-bar"></div>
+        </div>
+        <div class="monitor-neck"></div>
+        <div class="monitor-base"></div>
+      </div>
+      <div class="mockup-badge mockup-badge--speed">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        </svg>
+        1.2s carga
+      </div>
+      <div class="mockup-badge mockup-badge--live">
+        <span class="badge-pulse"></span>
+        Live
+      </div>
+      <div class="mockup-badge mockup-badge--availability">
+        <span class="badge-pulse"></span>
+        ¿Listo para estar siempre online?
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre-mi">
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p class="section-label">Sobre mí</p>
+        <h2 class="section-title">Código limpio,<br>resultados reales</h2>
+        <p>Soy estudiante en etapa final de <strong>Ingeniería en Informática</strong>, construyendo mi camino en el
+          desarrollo web con foco en la calidad y la funcionalidad.</p>
+        <p>Me especializo en páginas web accesibles para <strong>emprendedores y pequeños negocios</strong> que quieren
+          dar el salto al mundo digital sin complicaciones.</p>
+        <p>Priorizo siempre un diseño limpio, <strong>adaptable a celulares</strong> y con buena presentación — porque
+          la primera impresión importa.</p>
+        <div class="about-stats">
+          <div class="stat-card fade-in">
+            <div class="service-glow"></div>
+            <div class="stat-num">Frontend</div>
+            <div class="stat-label">Diseño e interacción del sitio web.</div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="service-glow"></div>
+            <div class="stat-num">Backend</div>
+            <div class="stat-label">Funcionalidad interna, seguridad y manejo de datos.</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="about-visual fade-in">
+        <div class="about-card-main">
+          <h3>Stack actual</h3>
+          <p>Herramientas con las que trabajo</p>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span
+              class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Responsive Design</span><span class="skill-tag">React</span><span
+              class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">VS Code</span><span class="skill-tag">SEO básico</span>
+          </div>
+        </div>
+        <div class="about-card-float"><span>Estado actual</span>Abierto a nuevos proyectos</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="services-header fade-in">
+      <p class="section-label">Servicios</p>
+      <h2 class="section-title">¿En qué puedo ayudarte?</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-glow"></div>
+        <h3>Landing Pages</h3>
+        <p>Páginas de aterrizaje diseñadas para convertir visitantes en clientes. Rápidas, atractivas y enfocadas.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-glow"></div>
+        <h3>Diseño Responsive</h3>
+        <p>Tu sitio se verá perfecto en cualquier dispositivo — celular, tablet o computadora.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-glow"></div>
+        <h3>Presencia Online</h3>
+        <p>Construimos juntos tu identidad digital: desde el dominio hasta el sitio publicado.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-glow"></div>
+        <h3>Sitios Rápidos</h3>
+        <p>Código optimizado y sin pesos innecesarios. Carga rápida y mejor SEO.</p>
+      </div>
+    </div>
+
+    <!-- Nota informativa sobre costos (Opción 1: Píldora) -->
+    <div class="services-footer fade-in">
+      <div class="price-note">
+        <p>Presupuestos personalizados: Los costos varían de acuerdo al trabajo a realizar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="contact-inner">
+      <div class="fade-in">
+        <p class="section-label">Contacto</p>
+        <h2 class="section-title">Hablemos de tu proyecto</h2>
+        <p class="contact-desc">¿Tenés una idea o necesitás mejorar tu presencia online? Escribime y encontremos la
+          solución ideal para tu negocio.</p>
+      </div>
+      <div class="contact-links fade-in">
+        <a href="https://wa.me/595971390913" class="contact-link" target="_blank">
+          <div class="contact-glow"></div>
+          <div class="contact-link-icon-new">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+          </div>
+          <div class="contact-link-text"><strong>WhatsApp</strong><span>Respondo en menos de 24hs</span></div>
+        </a>
+        <a href="mailto:lizrovaz1703@gmail.com" class="contact-link">
+          <div class="contact-glow"></div>
+          <div class="contact-link-icon-new">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="contact-link-text"><strong>Email</strong><span>lizrovaz1703@gmail.com</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Rocio Web · 2026 · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
